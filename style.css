@@ -4,243 +4,553 @@
     box-sizing: border-box;
 }
 
-
+body{
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 header{
-position: sticky;
-top: 0;
-}
-
-.container{
-height: 120px;
-background: coral;
- display: flex;
- text-align: center;
- justify-content: space-between;
- box-shadow: 0px 10px 10px rgba(255, 255, 255, 0.849);
- background-attachment: fixed;
- 
- 
-}
- h1{
-    color: white;
-    margin: 0px 100px;
-    font-size: 60px;
-    text-shadow: blue 0px 0px 6px;
-    font-family: 'Comforter Brush', cursive;
-
+    top: 0;
    
-}
-h2{
-    margin-left: -700px;
-    margin-top: 25px;
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-    font-family: 'Shadows Into Light', cursive;
-    text-shadow: blue 0px 0px 6px;
+    box-shadow: 1px 5px 5px rgb(255, 255, 255);
+    
 }
 
-ul{
+.contenedor{
+    background-color: coral;
+    min-height: 90px;
     display: flex;
     text-align: center;
-   margin: 50px 0px;
+    justify-content: space-between;
+    flex-direction: row;
+   box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+    text-shadow: black 1px 2px 2px;
+}
 
+h1{
+    display: flex;
+    justify-content: right;
+     font-family: bodoni;
+    color: white;
+    padding-left:50px;
+    padding-top: 20px;
+   position: relative;
+   display: inline;
 }
- li{
-    margin-right:60px;
-    list-style: none;
-    font-size: 30px;
-    margin-top: -10px;
-   
+h1 img{
+    height: 80px;
 }
-a{
-color: white;
-text-decoration: none;
-font-weight: 500;
-text-shadow: blue 0px 0px 6px;
+b{
+    color: white;
+    font-size: 25px;
+   font-family:  Shadows Into Light;
+    font-weight: 100;
 }
-i{
-    margin: 10px;
-}
-i:hover{
-    color: rgb(255, 196, 0);
-}
-.fa-bars{
-    margin-left: 50px;
-    margin-right: -20px;
-    font-size: 40px;
-    margin-top: 0;
-}
-.cuerpo{
-    height: 800px;
-   background: url(img/flip.png);
-   background-repeat: no-repeat;
-   background-size: cover;
- background-position: top;
- margin-bottom: 50px;
- background-attachment: fixed;
-
-}
-.partes{
-   display: flex;
-   text-align: center;
-   justify-content: center;
-   
-   
-}
-h3{
-    margin-top: 150px;
-    margin-left: 900px;
+.contenedor ul{
+    display: flex;
+   align-content: center;
+    justify-content: center;
     margin-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contenedor ul li{
+    list-style: none;
+    padding-right: 10px;
+    font-size: 35px;
+    font-family: 'Shadows Into Light Two',
+}
+
+.contenedor ul li a{
+    color: white;
+    text-decoration: none;
+    text-shadow: black 0px 1.5px 1.5px;
+   
+
+}
+
+.contenedor ul li a:hover{
+    border-bottom: 3px white solid;
+}
+nav{
+    display: flex;
+  
+}
+.ham{
+  
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+   float: right;
+  margin-left: 50px;
+}
+.ham span{
+    display: block;
+    background-color: #f3f3f3;
+    height: 3px;
+    width: 28px;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+.fa-facebook{
+    color: rgb(26, 82, 155);
+    font-size: 40px;
+    cursor: pointer;
+}
+.fa-instagram{
+    color: rgb(253, 40, 129);
+    font-size: 40px;
+    cursor: pointer;
+}
+.fa-twitter{
+    color: rgb(56, 120, 240);
+    font-size: 40px;
+    cursor: pointer;
+}
+.fa-youtube{
+    color: rgb(214, 35, 35);
+    font-size: 40px;
+    cursor: pointer;
+}
+.segunda{
+  
+ min-height: 400px;
+ background: url(img/flip2.png);
+ min-height: 400px;
+ border-bottom: rgb(33, 61, 156) 1px solid;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+background-position: left;
+ 
+
+}
+
+.adentro{
+    display: grid;
+   justify-items: flex-end;
+    min-height: 600px;
+    flex-wrap: wrap;
+    font-weight: 700;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-right:100px ;
+    
+   
+      
+}
+.flota{
+    margin-top: 50px;
+}
+
+
+.flota h5{
     color: white;
     font-size: 100px;
-    text-shadow: blue 0px 0px 6px;
-    font-family: sans-serif;
+    text-shadow: rgb(161, 1, 161) 0px 2px 3px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
+    margin-bottom: 50px;
 }
-p{ color: tomato;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-   margin-left: 700px; 
-   margin-top: 50px;
-   font-size: 35px;
-   text-shadow:white 1px 1px 0px;
+.flota p{
+    font-family: 'Shadows Into Light Two', cursive;
+    margin-top: 20px;
+    font-size: 35px;
+    color: coral;
+    text-shadow: rgb(255, 255, 255) 1.5px 1px 0.5px;
 }
-h4{
+.flota .boton{
+    background-color: white;
+    font-size: 20px;
+    font-weight: 800;
+      padding: 5px 50px;
     color: tomato;
-    float: right;
-    margin-right: 500px;
-    background: white;
-    font-size: 30px;
-    font-family: sans-serif;
-    margin-top: 100px;
-    padding: 10px 80px;
-    background-size: 40px 300px;
-    box-shadow: 0px 0px 5px 2px;
-}
-h4:hover{
-    color: rgb(255, 196, 0);
+    margin-top: 40px;
+    border: 2px coral solid;
+    box-shadow: coral -1px 1px 2px 0.5px;
+    width:fit-content ;
     cursor: pointer;
     
+    
 }
-h6{
+
+.flota h3{
+    color: #ffc400;
+    text-shadow: black 1px 1px 1px;
+    font-family: Shadows Into Light;
+    margin-top: 50px;
+    font-weight: 800;
+    font-size: 50px;
+ 
+    
+   
+}
+
+.tercera{
+  display: flex;
+    min-height:100%;
+    background-color: white;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    flex-direction: row;
+   
+
+}
+.tercera h3{
     color: white;
-    float: right;
-    margin-top: 200px;
-   margin-right: -300px;
-   font-size: 40px;
-   font-family: 'Shadows Into Light', cursive;
-   color: rgb(255, 196, 0);
-   text-shadow: black 0px 5px 5px;
+    background-color: coral;
+    height: 340px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 20px 20px 40px;
+    border-radius: 10px;
+    box-shadow:black 0px 0px 3px 0.5px;
+    font-size: 40px;
+    text-shadow: black 0px 1px 2px;
+  
+ 
+  
+  
 }
-.red{
-    height: 600px;
+ .item-post1{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+   
+}
+
+.tercera .item-post2{
    display: flex;
+    flex-wrap: wrap;
+   
+ 
+   
 }
-.red img{
-    height: 648px;
-    margin-bottom: 0;
-    margin-top: -48px;
-    margin-right: -100px;
-    text-indent: 50px;
+
+.tercera img{
+    height: 550px;
+ 
 }
-.parrafo{
-    display: flex;
+.item-post3{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 25px;
+   
+   width: 800px;
+ 
+  
+    
+   
+}
+.tercera p{
+    color: rgb(0, 0, 0);
+   max-width: 700px;
+    margin-top: 20px;
     flex-wrap: wrap;
 }
-
-
-h5{ color: white;
+.item-post3 b{
+    color: rgb(0, 0, 0);
+    font-family: fantasy;
     font-size: 40px;
-   height: 300px;
-   width: 400px;
-  padding-top: 50px;
-  padding-left: 50px;
-  
-  
-    background-color: coral;
-    margin-right: -500px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-.red p{
-    color: black;
-    font-size: 30px;
-    margin-right: 150px;
-    margin-top: -0px;
-    margin-left: 520px;
+.besame-morenita{
+    background-color: rgb(224, 240, 247);
+    text-align: center;
+    width: 100%;
+}
+.besame-morenita h5{
+    font-size: 50px;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    font-family: bodoni;
+    font-weight: 500;
     
-  }
-  .segundo{
-      margin-top: -250px;
-      color: antiquewhite;
-  }
- 
+}
+#cuarta{
+     min-height: 400px;
+   
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+  text-align: center;
+   justify-content: center;
+   flex-direction: row;
+   gap: 40px;
+   width: 100%;
+   margin-bottom: 50px;
+
+}
+.la-morena{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: black 1px 0.5px 20px;
+    border-radius: 10px;
+    height: 700px;
+    background-color: white;
+}
+.la-morena h5{
+    color: black;
   
-  #sigue{
-      height: 700px;
-     background-color: #fab170;
+    font-size: 40px;
+    text-transform: capitalize;
+
+}
+
+
+.la-morena h3{
+width: 500px;
+background-color: rgb(255, 255, 255);
+
+
+
+}
+.la-morena1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: black 0px 0.5px 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+.la-morena1 h5{
+    color: black;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.la-morena1 h3{
+    width: 560px;
+    background-color: rgb(255, 255, 255);
+    }
+
+footer{
+    
+    min-height: 300px;
+    background: url(img/jade-mirada.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+   
+  
+   
+
+}
+.pre{
+    background-color: rgba(0, 0, 0, 0.534);
+    justify-content: space-evenly;
+}
+.pie{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: inherit;
+    width: 100%;
+    gap: 200px;
+ 
+    
+}
+.pie3{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.pie3 ul{
+    display: flex;
+}
+.pie3 h2{
+    color: #ffc400;
+    text-shadow: black 1px 1px 1px;
+    font-family: Shadows Into Light;
+    font-size: 60px;
+}
+.pie1 ul li{
+    list-style: none;
+    font-size: 30px;
+}
+.pie1 ul li a{
+  color: white;
+  text-decoration: none;
+}
+.pie1{
+    margin-top: 50px;
   }
-  .vide{
+  .pie .pie1 h2{
+    color: #ffc400;
+    text-shadow: black 1px 1px 1px;
+    font-family: Shadows Into Light;
+    font-size: 70px;
+  }
+  .pie2{
+    margin-top: 50px;
+  }
+  .pie ul li{
+    list-style: none;
+    font-size: 30px;
+}
+.pie2 ul li a{
+    color: white;
+    text-decoration: none;
+  }
+  .pie2 h2{
+    color: #ffc400;
+    text-shadow: black 1px 1px 1px;
+    font-family: Shadows Into Light;
+    font-size: 60px;
+  }
+.pie3 i{
+    margin-left: 30px;
+    font-size: 70px;
+}
+.pie4{
+    margin-bottom: 50px;
+    margin-top: -100px;
+    color: white;
+}
+.pie4 h2{
+    font-family: Shadows Into Light ;
+   font-size: 70px;
+}
+.fa-patreon{
+    color: #f86752;
+    font-size: 80px;
+    margin-left: 20px;
+    margin-bottom: -50px;
+    cursor: pointer;
+}
+footer h3{
+color: white;
+font-family: bodoni;
+font-size: 70px;
+font-weight: bolder;
+text-shadow: black 0.5px 2px 5px;
+margin-top: 50px;
+}
+
+
+@media screen and (max-width:768px) {
+    .segunda{
+  
+        min-height: 400px;
+        background: url(img/Derecha.png);
+        min-height: 400px;
+        border-bottom: rgb(33, 61, 156) 1px solid;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        
+       
+       }
+       .adentro{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        min-height: 600px;
+        flex-wrap: wrap;
+        font-weight: 700;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        width: auto;
+       
+       
+          
+    }
+    .item-post3{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 25px;
+       margin-left: 10px;
+       
+    }
+    .tercera p{
+        color: rgb(0, 0, 0);
+       width: auto;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+    .item-post3 b{
+        color: rgb(0, 0, 0);
+        font-family: fantasy;
+        font-size: 40px;
+    }
+    .contenedor ul li a{
+        color: white;
+        text-decoration: none;
+        text-shadow: black 0px 1.5px 1.5px;
+        display: none;
+       
+    
+    }
+    
+ 
+    #cuarta{
+         min-height: 400px;
+       
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+       text-align: center;
+       justify-content: center;
+       flex-direction: row;
       
-      display: flex;
-      justify-content: center;
-      margin: 20px;
-  }
-  iframe{
-      display: flex;
-      margin: 50px;
-      margin-top: 200px;
-      height: 400px;
-      width: 600px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  }
-  .intermedio{
-      height: 600px;
-      background-color: white;
-  }
-  #foot{
-      height: 300px;
-      background: url(img/jade-mirada.jpg);
-      background-position: bottom;
-      background-repeat: no-repeat;
-     background-size: cover;
-     background-position: bottom;
-     background-attachment: fixed;
-     
-  }
-  .abajo{
-     margin-top: 0;
-     padding-top: 100px;
-  }
- 
-  b{
-      font-size: 60px;
-      color: coral;
-      text-shadow: black 2px 5px 2px;
-      font-family: 'Kaushan Script', cursive;
-      font-weight: 300;
-      margin-top: 100px;
-      margin-left: 100px;
-      margin-right: 100px ;
-  }
-  .abajo ul{
-      float: right;
-      
-  }
-  .abajo a{
-    color: rgb(255, 196, 0);
-    text-shadow: black 0px 5px 5px;
-      font-weight: 300;
-      font-family: 'Source Sans Pro', sans-serif;
-      font-size: 50px;
-  }
-  .fa-patreon{
-     color:#f86752 ; 
-  }
- 
+       width: auto;
+       margin-bottom: 50px;
+    
+    }
+    .la-morena{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: black 1px 0.5px 20px;
+        border-radius: 10px;
+        height: auto;
+        background-color: white;
+    }
+    .la-morena h5{
+        color: black;
+        font-size: 40px;
+        text-transform: capitalize;
+    
+    }
+    
+    
+    .la-morena h3{
+    width: 560px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    
+    
+    
+    }
 
+    .la-morena1 h5{
+        color: black;
+        text-transform: capitalize;
+        font-size: 40px;
+    }
+    .la-morena1 h3{
+        width: 560px;
+        background-color: rgb(255, 255, 255);
+        }
+}
+.enlace-menu.activado{
+    display: flex;
+}
 
-
- 
-  
-  

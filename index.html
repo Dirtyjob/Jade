@@ -4,76 +4,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9f09fc5cc2.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Comforter+Brush&family=Gwendolyn&family=Kaushan+Script&family=Poppins:ital,wght@1,300&family=Roboto:wght@100&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
-    <title>Jade belly dance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bodoni+Moda&family=Comforter+Brush&family=Gwendolyn&family=Kaushan+Script&family=Poppins:ital,wght@1,300&family=Roboto:wght@100&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+    <title>Menu desplegable</title>
+
 </head>
 <body>
-    <div class="contenedor">
-        <header id="arriba">
-            <div class="container">
-               
-                <h1><img src="img/jade-cover-removebg-preview.png" height="120px" alt=""></h1>
-                <h2>Jade Belly dance</h2>
-                <ul>
-                    <li><a href="otra.html"><i class="fas fa-home"></i>Inicio</a></li>
-                    <li><a href="#"><i class="fas fa-users"></i>Contacto</a></li>
-                    <li><a href="#"><i class="fas fa-address-book"></i>Lista</a></li>
-                    <li><a href="#"><i class="far fa-comment-alt"></i>Redes</a></li>
-                   <li><a href="#"> <i class="fas fa-bars"></i></a></li>
-                </ul>
+    
+    <header>
+        <div class="contenedor">
+            <h1><img src="img/jade-cover-removebg-preview.png" alt=""> Jade Román  <b>belly dance</b></h1>
+           
+            <ul id="enlace-menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#videos">Canal</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#footer">Acerca de</a></li>
+                <div class="closeMenu"></div>
+                <div class="ham">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                 </div>
                 
-            </div>
-        </header>
-            <div class="cuerpo">
-                <div class="partes">
-                    <h3>Emplea tu  cuerpo y tu mente.</h3>
-                   
-                </div>
-                <p>Es tiempo de amarte a ti mismo y dar amor a los demás.</p>
-                <h4 onclick="location.href = 'otra.html';">Empieza ahora</h4>
-                <h6>Sigueme en mis redes.</h6>
-              
-               
-            </div>
-        <div class="red">
-            <img src="img/red.jpg" alt="">
-            <h5>Amarte a ti mismo es cuidarte y respetarte
-                "escucha tu cuerpo".
-            </h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore explicabo vitae molestias iusto, assumenda hic at reprehenderit mollitia nobis aperiam ex dolorum repellat quibusdam id quae nostrum veniam ipsa aut.</p>
-            
-             </div>
-           <div id="sigue">
-               <div class="vide">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/h7Tw47wcw-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                   <iframe width="560" height="315" src="https://www.youtube.com/embed/UYeO3auDUsA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  
-            </div>
-            <div class="intermedio">
-                <em>Si lees esto es porque mi viaje por el belly dance y el arte te ha parecido un viaje fabuloso y quieres unirte a mi travesía, no tengo palabras para expresarte que me siento dichosa de ser un canal de aprendizaje y enriquecimiento artístico para ti y todos los que aman el arte y la belleza del belly dance, he estado practicando durante muchos años mas de 12 para ser exacta, he aprendido distintas técnicas y métodos que empleo en mi baile los he recopilado lo mejor que he podido y te los entrego n mis vídeos de youtube, ademas en mis páginas de Facebook e Instagram puedes encontrar publicaciones que coloco acerca de mis vivencias y situaciones entre otras muchas cosas tanto relacionadas al belly dance como de mi vida cotidiana, bienvenidos al belly dance bienvenidos a mi mundo.</em>
-            </div>
-            <footer>
-                <div id="foot">
-                  <div class="abajo">
-                     
-                      <ul>
-                          <li class=""><a href="https://www.patreon.com/jaderomanbellydance"><i class="fab fa-patreon"></i>Apoyame en Patreon</a></li>
-                      </ul>
-                      <b>La belleza está en los ojos de quien la mira.</b>
-    
-                  </div>
-                </div>
-             </footer>
+            </ul>
           
-          
-    
-    
-  
+        </div>
+       
+    </header>
    
+       
+   
+   
+   
+     
+    
+        <div class="segunda">
+            <div class="padre">
+                <input type="submit" value="Mostrar" onclick="Mostrar()"/>
+            <input type="submit" value="Ocultar" onclick="Ocultar ()"/>
+            </div>
+            <div class="adentro">
+                <div class="flota">
+                    <h5>Emplea tu cuerpo <br> y tu mente</h5>
+                    
+                    <p>Es tiempo de amarte a ti mismo y dar amor a los demás.</p>
+                   <div onclick="location.href='//www.youtube.com/c/JadeRoman';" class="boton"><i onclick="enlace();">Empieza ahora</i></div>
+                    <h3 class="sigue">sigueme en mis redes. <i  onclick="location.href = '//www.facebook.com/groups/2527870684209988';" class="fab fa-facebook"></i>
+                        <a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram"></i></a>
+                       <b onclick="location.href='//twitter.com/home';"><i class="fab fa-twitter"></i></b>
+                        <i onclick="location.href='//www.youtube.com/c/JadeRoman'; " class="fab fa-youtube"></i></h3>
+                  </div>
+                 
+                </div>
+             
+           
+     
+      </div>
+     
+      <div class="tercera">
+       
+       <div class="item-post1">
+          
+        <img src="img/jade-cover-removebg-preview.png" alt="" >
+        <h3>"Amarte a ti mismo es cuidarte y respetarte, escucha tu cuerpo". </h3>
+       </div>
+       <div class="item-post2">
+      
+       </div>
+       <div class="item-post3">
+           <b>El Valor de el arte.</b>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ad autem ab optio quasi, possimus hic laboriosam nostrum! Sapiente quibusdam, iure magnam distinctio est tenetur nulla harum enim accusantium beatae itaque consectetur porro corporis perferendis nemo cupiditate, sit cumque similique. Incidunt temporibus dolores harum delectus, consequatur voluptas quisquam molestias voluptatum!</p>
+          
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis exercitationem ut ullam dolor eius velit quasi eum, dolorum possimus expedita repellendus quia error. Tenetur, quae culpa tempore aperiam officia recusandae, odit neque asperiores iste incidunt quibusdam quam exercitationem nobis consequuntur dolorem quisquam facere! Consequuntur fuga error facilis aperiam qui alias.</p>
+       </div>
+      </div>
+      <div class="besame-morenita">
+          <h5 id="videos">Te presento mis videos</h5>
+        <div id="cuarta">
+            <div class="la-morena">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Qk2LQJq6spI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5>Videos celebrando  fechas especiales</h5>
+              <h3>Siempre soñe con ser una gitana, creo que hasta lo soñaba. pero en fin una gitana de esas que no leen las cartas sino de las que adivinan con el pensamiento, y por eso puedo ver en tus ojos que vas a entrar a ver este video y te vas a trasportar a esos lugares lejanos y reconditos de donde nacen las historietas de bailarinas encantadas.</h3>
+            </div>
+            <div class="la-morena1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UYeO3auDUsA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5>Videos con Hermosos vestidos</h5>
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam commodi sint, provident debitis id, non atque repellat quibusdam fugiat fuga expedita dignissimos, aliquam nemo culpa eos molestiae dolore explicabo laudantium!</h3>
+            </div>
+            <div class="la-morena">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9fWunJoLymA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5>Videos en la playa</h5>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam commodi sint, provident debitis id, non atque repellat quibusdam fugiat fuga expedita dignissimos, aliquam nemo culpa eos molestiae dolore explicabo laudantium!</h3>
+              </div>
+              
+             
+            </div>
+           
+                <footer id="footer">
+                    <div class="pre">
+                        <h3>La belleza está en los ojos de quien la mira.</h3>
+                        <div class="pie">
+                           <div class="pie1"><h2>Nosotros:</h2>
+                           <ul>
+                               <li><a href="#">Biografia</a></li>
+                               <li><a href="#">Tienda</a></li>
+                               <li><a href="#">Belly dance</a></li>
+                               <li><a href="#">Mis videos</a></li>
+                               <li><a href="#">Mis fotos.</a></li>
+                           </ul></div>
+                           <div class="pie2"><h2>Que hacemos:</h2>
+                               <ul>
+                                   <li><a href="#">Clases</a></li>
+                                   <li><a href="#">Talleres</a></li>
+                                   <li><a href="#">Presentaciones</a></li>
+                                   <li><a href="#">Asesoria</a></li>
+                                   <li><a href="#">Organizacion de eventos</a></li>
+                               </ul></div>
+                           <div class="pie3"><h2>Contactanos</h2>
+                               <ul>
+                                   <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                   <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                   <li><a href="#"><i class="fab fa-youtube"></i></div></a></li>
+                                 </ul>
+                                 <div class="pie4"><h2>Apoyanos a traves de Patreon! <i onclick="location.href='//www.patreon.com/jaderomanbellydance'; " class="fab fa-patreon"></i></h2>
+                                  
+                                   </ul></div>
+                               </div>
+                                   
+                               
+       
+                        </div>
+                       
+                    </div>
+                   
+     
+              </footer>
+          
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
       <script src="app.js"></script>
 </body>
 </html>
